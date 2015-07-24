@@ -1,0 +1,374 @@
+/*                          Общее:
+=================================================================== */
+html, body { margin: 0; padding: 0; height: 100%; }
+body { background-color: #EEEEEE; }
+
+#box {
+	height: 100%;
+	min-width: 1000px;
+	overflow: hidden;
+	text-align: center;
+}
+/*                          Шапка:
+=================================================================== */
+	#headerLow {
+		font-size: 18px;
+		color: white;
+		background-color: #F1E8FF;
+		color: brown;
+		height: 36px;
+		line-height: 36px;
+	}
+	#header {
+		height: 60px;
+		background-color: #D1E5F3;
+		text-align: center;
+		border-top: 1px solid #666;
+		border-bottom: 1px solid #666;
+	}
+		.headerTab {
+			display: inline-block;
+			height: 28px;
+			background-color: white;
+			line-height: 28px;
+			font-size: 20px;
+			margin-top: 15px;
+			margin-left: 20px;
+			padding-left: 10px;
+			padding-right: 10px;
+			text-decoration: none;
+			border-radius: 5px;
+			border: 1px solid #EEBD82;			
+		}
+		.headerTabFirst {
+			margin-left: 0;
+		}
+		.headerTab:hover {
+			background-color: silver;
+		}
+									/*Стиль выбранного пункта*/
+		.headerUrlSel {
+			background-color: orange;
+			border: 1px solid white;
+		}
+		.headerUrlSel:hover {
+			background-color: orange;
+		}
+									/**/
+			table tr td {
+				overflow: hidden;
+			}
+/*                          Центральная часть:
+=================================================================== */
+	#contentBox {
+		background-color: #D6D6D6;
+		height: 100%;
+	}
+/*                          Меню:
+=================================================================== */
+		#leftBox {
+			float: left;
+			width: 20%;
+		}
+											/*Кнопка на сайт*/
+			.MenuFirstButt {
+				color: white;
+				display: inline-block;
+				height: 100px;
+				width: 80px;
+				background-color: #DBDBDB;
+				line-height: 100px;
+				font-size: 22px;
+				margin-top: 20px;
+				padding-left: 10px;
+				padding-right: 10px;
+				text-decoration: none;
+				border-radius: 50%;
+				border: 1px solid #FFC490;
+				white-space: nowrap;
+				box-shadow: #666 0px 0px 10px;
+			}
+			.MenuFirstButt:hover {
+				background-color: #B5BB9E;
+			}
+								/*Контейнер для СубМеню*/
+			#SubMenu {			
+				margin-top: 20px;
+				overflow: hidden;
+				padding-top: 20px;
+				padding-bottom: 20px;
+			}
+										/*Общие стили для кнопок меню*/
+				.SubMenuTab {
+					color: brown;
+					display: inline-block;
+					height: 30px;
+					background-color: #DAFFE5;
+					line-height: 30px;
+					font-size: 20px;
+					margin-top: 15px;
+					padding-left: 25px;
+					padding-right: 25px;
+					text-decoration: none;
+					border-radius: 5px;
+					border: 1px solid white;
+				}
+								/*Стиль подсветки, когда выбран пункт добавить Товар*/
+				.addRow {
+					background-color: #FFF9B9;
+				}
+/*                          Контент:
+=================================================================== */
+		#rightBox {
+			background-color: #EEEEEE;			
+			float: right;
+			width: 80%;
+			height: 100%;
+		}
+									/*стиль для Добавить Урок */
+		.AddBoxColor {
+			background-color: white !important;
+		}
+			#centerCont {
+				padding: 10px;
+				position: relative;
+			}
+									/*Вывод Книг*/
+				#AdmTable {
+					width: 100%;
+					border: 1px solid silver;
+					text-align: center;
+					table-layout: fixed;
+				}
+												/*Полосатая таблица*/
+					#AdmTable tr {
+						background-color: #EDFFF8;
+					}
+					#AdmTable tr:nth-child(2n+1) {
+						background-color: white;
+					}
+					#AdmTable thead tr{
+						color: brown;
+						background-color: #C5E8D8 !important;
+					}
+														/*Для ячеек таблицы*/
+						#AdmTable tr td {
+							border: 1px solid silver;
+						}
+											/*Иконка редактирования*/
+							.editUrl {
+								display: inline-block;
+								width: 15px;
+								height: 12px;
+								margin-top: 3px;
+								background: url(../img/edit.png) no-repeat;
+								text-decoration: none;
+							}
+											/*Иконка удаления*/
+							.delUrl {
+								display: inline-block;
+								width: 15px;
+								height: 12px;
+								margin-top: 3px;
+								background: url(../img/del.png) no-repeat;
+								text-decoration: none;
+							}
+							.customerOrdDetal {
+								text-decoration: none;
+								width: 80px;
+							}
+										/* Ширина ячеек*/
+						#tabNum {
+							width: 30px;
+						}
+						#tabPrice, #tabQuant {
+							width: 50px;
+						}
+						.tabRow {
+							width: 120px;
+						}
+						.tabDelOrd {
+							width: 62px;
+						}
+												/*Стили по наведению на таблицу*/
+					#AdmTable tr {
+						cursor: pointer;
+					}
+					#AdmTable thead tr {
+						cursor: default;
+					}
+
+					#AdmTable tr:hover {
+						background-color: #FFD8D8;
+					}
+/*                          Таблица Книг:
+=================================================================== */
+				#paginatorBox {
+					height: 30px;
+					width: 227px;
+					margin: auto;
+					margin-top: 15px;
+					padding-bottom: 0px;
+					text-align: left;
+				}
+					#paginatorPanel {
+						position: relative;
+						padding: 0px;
+						padding-left: 35px;
+						padding-right: 5px;
+						font-size: 14px;
+					}
+													 /*Общие стили для элементов пагинатора*/
+						.paginatorNum {
+							border: 1px solid #666;
+							background: #ACF58D;
+							background: #C2FFA8;
+							border-radius: 50%;
+							display: inline-block;
+							height: 28px;
+							width: 28px;
+							text-align: center;
+							color: #666;
+							font-size: 14px;
+							line-height: 28px;
+							font-weight: 900;
+							text-decoration: none;
+							margin-left: 30px;
+						}
+																		/*1-й блок - box 1-й страницы*/
+						#paginatorPanelLeftNum {
+							margin-left: 0px;
+						}
+						#paginatorPanelPrevArr {}
+																			/*3-й блок - box Центр-й страницы*/
+						#paginatorPanelCenterNum {
+							border-radius: 3px;
+							background-color: #E0CD95;
+							color: brown;
+						}
+																														/*Общие стили для стрелок*/
+						#paginatorPanelPrevArr, #paginatorPanelNextArr {
+							color: #2282FF;
+							border-radius: 0px;
+							border: none;
+							background-color: transparent;
+							font-size: 32px;
+							line-height: 32px;
+							position: absolute;
+							left: 36px;
+							height: 32px;
+							width: 28px;
+							top: 0px;
+						}
+						#paginatorPanelNextArr {
+							left: 99px;
+						}
+						#paginatorPanelPrevArr:hover, #paginatorPanelNextArr:hover {
+							color: #7F23F7;
+						}
+						.paginatorNumHover:hover {
+							background-color: #F5E08D;
+						}
+															/*Стиль случай когда 1-я/N-я ссылка - пустой блок и не активна
+																echoPagFirstPage(), echoPagLastPage()*/
+						.paginatorNumNone {
+							cursor: default;
+							background-color: transparent;
+							border: 1px solid #C1C1C1;
+						}
+						.paginatorArrNone {
+							color: #C5DFFF !important;
+							cursor: default;
+						}
+																		/*Сдвиг для последней цифры*/
+						#paginatorPanelRightNum {
+							margin-left: 29px;
+						}
+												/*Горизонтальный разделитель (между блоками)*/
+					.hBorderSepar {
+						height: 10px;
+						width: 770px;
+						clear: both;
+					}
+/*                          Форма редактирования Книг:
+=================================================================== */
+				#sendDiv {
+					border: 2px solid #8BB2FF;
+					border-radius: 10px;
+					margin-top: 10px;
+					margin-right: 50px;
+					padding: 9px;
+					width: 180px;
+					text-align: center;
+					background: #ffffcc;
+					float:right;
+				}
+					#mForm input, #m_textarea1 {
+						border: 2px solid #A2A2A2;
+						border-radius: 2px;
+						padding: 2px;
+						background-color: #F9F9F9;
+						margin-top: 2px;
+						margin-bottom: 8px;
+					}
+					#m_textarea1 {
+						max-width: 700px;
+						max-height: 350px;
+						min-width: 80px;
+						min-height: 80px;
+						border: 1px solid #FFB88B;
+						padding: 5px;
+						border-radius: 5px;
+					}
+					.mFormText {
+						color: #9C5C4D;
+						font-size: 18px;
+					}
+					.mFormInputC {
+						text-align: center;
+					}
+					#sendDiv input {
+						margin-top: 0px;
+						margin-bottom: 0px;
+						background-color: #E4E4FF;
+						border: 2px solid #BE8C86;
+						cursor: pointer;		
+					}
+													/*Стиль js счетчика редиректа*/
+					#redirectClock {
+						border: 1px solid #666;
+						background: #EFFFE8;
+						border-radius: 50%;
+						display: inline-block;
+						height: 28px;
+						width: 28px;
+						text-align: center;
+						color: brown;
+						font-size: 14px;
+						line-height: 28px;
+						font-weight: 900;
+					}
+											/*Стиль сообщения об ошибке при заполнении формы (обновления данных)*/
+					.refreshErr {
+						color: olive;
+						font-size: 18px;
+					}
+						.refreshErrVal {
+							color: red;
+							font-weight: 900;
+						}
+									/*Стиль общего сообщения при редиректе*/
+		.redirectMsg {
+			font-size: 18px;
+		}
+
+
+
+
+
+
+
+
+
+
+

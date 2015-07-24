@@ -1,0 +1,598 @@
+body { background-color: #FAFAFA; background: url(../img/bg.jpg) repeat;}
+h1 {
+	text-align: center;
+}
+#box {
+	width: 1000px;
+	margin: 0 auto;
+	border: 1px solid #D7D3FA;
+	box-shadow: silver 0px 0px 10px;
+	overflow: hidden;
+	border-radius: 7px;
+	background: url(../img/box.jpg) repeat;
+	padding: 7px;
+}
+	/*													Лого Сайта
+	----------------------------------------------------------------*/
+	.header {
+		height: 100px;
+		background: white;
+		text-align: center;
+		background: url(../img/HeadLogo.jpg) no-repeat;
+		border-radius: 15px 15px 0px 0px ;
+	}
+		.header.text{
+			margin-top: 31px;
+			background: none;
+			height: 30px;
+			display: inline-block;
+			color: white;
+			letter-spacing: 25px;
+			font-size: 35px;
+			font-style: Times New Roman;
+		}
+	/*	Блок Корзины
+	----------------------------------------------------------------*/
+	#regBox {
+		height: 50px;
+		border: 1px solid silver;
+		background: url(../img/2bookBox.jpg);
+	}
+		#inBasket {
+			padding-left: 24px;
+			text-decoration: underline;
+			color: blue;
+			display: inline-block;
+			margin-bottom: 8px; 
+			overflow: hidden;
+		}
+								/*стиль числа корзины*/
+		.bookBasket {
+			display: inline-block;
+			margin-left: 5px;
+			margin-top: 9px;
+			border: 2px solid #67C889;
+			border-radius: 50%;
+			color: brown;
+			font-family: "Times New Roman";
+			height: 28px;
+			width: 28px;
+			text-align: center;
+			font-size: 14px;
+			line-height: 28px;
+			overflow: hidden;
+		}
+									/*Стили для пустой корзины*/
+		#emptyBasket {
+			padding-left: 24px;
+			margin-top: 11px;
+			display: inline-block;
+		}
+		.basketZero {
+			display: inline-block;
+			margin-left: 5px;
+			padding: 1px 8px;
+			border: 2px solid #67C889;
+			border-radius: 50%;
+			color: brown;
+			font-size: 16px;
+			font-family: "Times New Roman";
+		}
+								/*Стили для заполняемой корзины*/
+		#basketHead {
+			line-height: 50px;
+			font-size: 21px;
+			text-transform: uppercase;
+			letter-spacing: 10px;
+			color: #666;
+			text-shadow: #8244DF 0px 0px 10px;
+		}
+								/*Классы для кнопок в итогах корзины*/
+		.fillOrder {
+			margin-left: 10px;
+			margin-top: 0px;
+			text-decoration: none;
+			display: inline-block;
+			background-color: #E1F7ED;
+			border: 2px outset #CDF8D6;
+			padding: 5px 15px;
+			font-size: 14px;
+			border-radius: 5px;
+			color: black;
+			overflow: hidden;
+			cursor: pointer;
+		}
+		.clearOrderAll {
+			background-color: #F7E9E9;
+			border: 2px solid #CFCFCF;
+		}
+		.clearOrder {
+			margin-top: 7px;
+			background-color: #D4D4D4;
+			border: 2px solid #CBEBFF;
+		}
+		.fillOrder:hover, .clearOrderAll:hover .clearOrder:hover, #change-image:hover {
+			background-color: #EEC387;
+		}		
+					/*Стили captcha*/
+		.OrderForm {
+			position: relative; /*для позиционирования сообщения об ошибке captcha*/
+		}
+		#captcha {
+			border: 2px solid #CFCFCF;
+			margin-bottom: 10px;
+		}
+		#change-image {
+			margin-top: 10px;
+			margin-bottom: 10px;
+			display: inline-block;
+			text-decoration: none;
+			background-color: #D4D4D4;
+			border: 2px solid #CBEBFF;
+			padding: 5px;
+		}
+						/*сообщения об ошибке captcha*/
+		#ErrCpt {
+			position: absolute;
+			padding-left: 7px;
+			padding-right: 7px;
+			height: 70px;			
+			text-align: center;
+			color: brown;
+			left: 215px;
+			background-image: url(../img/ErrCpt.png);
+			background-repeat: no-repeat;
+			background-position: 84px 19px;
+		}
+		.redirectMsg {
+			font-size: 18px;
+		}
+	/*									Меню вывода категорий
+	----------------------------------------------------------------*/
+	#leftBox {
+		width: 200px;
+		float: left;
+		margin: 0;
+		padding: 0;
+	}
+		#menu {
+			height: 264px;
+			padding-top: 10px;
+			padding-bottom: 20px;
+			margin-top: 3px;
+			margin-bottom: 3px;
+			background: #F3F2E3;
+			text-align: center;
+			border: 2px solid white;
+			border-radius: 5px;
+		}
+								/*Общие стили*/
+			.urlMenu {
+				display: block;
+				text-decoration: none;
+				margin: 20px;
+				padding: 8px;
+				border-radius: 5px;
+				border: 1px solid silver;
+				overflow: hidden;
+			}
+										/*Стиль для Главной url*/
+			.urlMenuMain {
+				background-color: #F6F6F6; /*если не активна*/
+				color: orange;
+				font-size: 18px;
+				font-weight: 900;
+			}
+			.urlMenu:hover {
+				background-color: #C7C7C7;
+				color: white;
+				border: 1px solid olive;
+			}
+								/*Ссылки Категорий*/
+			#headMenu {
+				color: #7063D5;
+				font-size: 20px;
+				text-align: left;
+				padding-left: 15px;
+				font-weight: 900;
+			}
+				.categoryMenu {
+					text-decoration: none;
+					background: white;
+					padding: 5px;
+					color: brown;
+					font-size: 15px;
+					margin: 5px;
+					margin-right: 45px;
+					margin-left: 5px;
+					background-color: #F6F6F6;
+					padding-left: 17px;
+				}
+																/*Отступ для 1-й ссылки*/
+			#headMenu a:first-child {
+				margin-top: 10px;
+			}
+											/*Класс для активной ссылки*/
+			.urlMenuSelect {
+				background: url(../img/HeadLogo.jpg) no-repeat;
+				color: white;
+				border: 1px solid olive;
+			}
+													/*Дополнительный отступ для выдел. пунктов меню (кроме главной)*/
+			.urlMenuSelectLMarg {
+				margin-left: 15px;
+				width: 107px;
+			}
+	/*											 Центральная Часть
+	----------------------------------------------------------------*/
+	#rightBox {
+		width: 800px;
+		overflow: hidden;
+		float: right;
+		margin: 0;
+		padding: 0;		
+	}
+		#content {
+			margin: 3px 0px 3px 4px;
+			background: #FAFAFA;			
+			text-align: center;
+			border: 2px solid #EEDCFF;
+			border-radius: 5px;
+			text-align: left;
+			padding: 10px;
+			overflow: hidden;
+		}
+		/*	Стиль контента Главной страницы
+		--------------------------------------*/
+			.contentHead {
+				color: #393A3E;
+				margin: 0px;
+				padding: 0px;
+				font-family: Arial;
+				font-size: 20px;
+			}
+			.contentLowHead {
+				font-size: 22px;
+				text-align: center;
+				margin: 10px 0px 5px;
+				padding: 0px;
+			}
+			.contentLine {
+				font-size: 18px;
+				font-family: "Arial";
+				font-style: italic;
+				font-weight: 900;				
+				color: #D8BA55;
+				list-style-type: upper-roman;
+				padding: 0;
+				margin: 0;
+				margin-left: 28px;
+			}
+				.contentLine li:last-child {
+					margin-bottom: 5px;
+				}
+				.subDescribe {
+					color: black;
+					font-weight: 100;
+					font-size: 17px;
+				}
+													/*Основной контент Главной страницы*/
+				.contentMainText {
+					font-size: 15px;
+					font-family: "Times New Roman";
+					padding: 0px;
+					margin: 0px;
+					margin-left: 20px;
+					color: black;
+					font-weight: 400;
+					font-style: normal;
+					color: green;
+					font-weight: 900;
+					white-space: nowrap;
+				}
+				.contentMainText li:first-line {
+					color: black;
+					font-weight: normal;
+					font-size: 17px;
+				}
+			#techTab {
+				width: 300px;
+				border: 1px solid silver;
+				text-align: center;
+				table-layout: fixed;
+			}
+				#techTab thead {
+					color: brown;
+					background-color: #E1F7ED;
+				}
+													/*Для ячеек таблицы*/
+					#techTab tr td {
+						border: 1px solid silver;
+					}
+		/*	 Стиль контента Категорий Товара
+		--------------------------------------*/
+			.bookConteiner {
+				float: left;
+				width: 381px;
+				height: 232px;
+				background-color: transparent;
+			}
+				.bookBox { 
+					width: 369px;
+					border: 1px solid silver;
+					padding: 5px;
+					height: 220px;
+					border-radius: 5px;
+					background-color: transparent;
+					box-shadow: #A8D0DF 0px 0px 3px;
+					overflow: hidden;
+					position: relative;
+					background: url(../img/bookBox.jpg);
+				}
+					.bookImgBox {
+							float: left;
+							padding-right: 5px;
+							padding: 0px;
+							margin-right: 5px;
+							height: 220px;
+							width: 150px;
+							background-color: white;
+							overflow: hidden;
+					}
+						.ImgBook {
+							border: none;
+						}
+													/*Контейнер для контента книги*/
+					.bookContentBox {
+						float: right;
+						margin: 0;
+						padding: 0;
+						width: 214px;
+						overflow: hidden;
+					}
+						.bookInHeadBlock {
+							height: 75px;
+							border-bottom: 2px dotted #C09FE8;
+							padding-bottom: 5px;
+							overflow: hidden;
+						}
+							.bookName {
+								font-weight: 900;
+								font-style: italic;
+								font-size: 16px;
+								font-family: Arial;
+								display: inline-block;
+								margin-bottom: 5px;
+								padding: 0;
+								color: #2C3D81;
+							}
+							.bookAuthor {
+								font-style: italic;
+								font-size: 16px;
+								font-family: "Times New Roman";
+								display: inline-block;
+								padding-left: 2px;
+							}
+															/*Box точное позиционирование)*/
+						.bookMiddleBlock {
+							position: absolute;
+							top: 95px;
+						}
+							.bookUsersRating {
+								display: inline-block;
+								margin-left: 5px;
+								padding: 1px 8px;
+								border: 2px solid #67C889;
+								border-radius: 50%;
+								color: brown;
+								font-size: 16px;
+								font-family: "Times New Roman";
+							}
+							.bookCommentsValue {
+								display: inline-block;
+								margin-top: 4px;
+								margin-left: 5px;
+								border: 2px solid #A28BC3;
+								padding-left: 3px;
+								padding-right: 3px;
+							}
+							.bookPrice {
+								display: inline-block;
+								padding-left: 3px;
+								padding-right: 3px;
+								border: 2px solid silver;
+								color: navy;
+								font-size: 16px;
+								font-family: "Times New Roman";
+								margin-right: 2px;
+								margin-top: 2px;
+								margin-bottom: 15px;
+							}
+														/*box для ссылок (точное позиционирование)*/
+						.bookDownBlock {
+							overflow: hidden;
+							position: absolute;
+							top: 200px;
+						}
+						.urlBookDown {
+								display: inline-block;
+								font-size: 14px;
+								font-family: Arial;
+								text-decoration: none;
+								border: 1px solid silver;
+								padding-top: 3px;
+								padding-bottom: 3px;
+								width: 100px;
+								text-align: center;						
+						}
+													/*ссылка на добавление в корзину*/
+							.urlToBasket {					
+								color: #FF6363;
+								background-color: #FFFAEB;
+							}
+														/*ссылка на подстраницу*/
+							.bookDetails {
+								color: #C89367;
+								background-color: #E1F6FF;
+							}
+						.urlBookDown:hover {
+							background-color: #A8DFAD;
+						}
+											/*Вертикальный разделитель (между блоками)*/
+				.vBorderSepar {
+					float: left;
+					width: 10px;
+					height: 1px;
+				}
+											/*Горизонтальный разделитель (между блоками)*/
+				.hBorderSepar {
+					height: 10px;
+					width: 770px;
+					clear: both;
+				}
+		/*	Стиль контента Главной страницы
+		--------------------------------------*/
+			#paginatorBox {
+				height: 30px;
+				width: 227px;
+				margin: auto;
+				padding-bottom: 0px;
+			}
+				#paginatorPanel {
+					position: relative;
+					padding: 0px;
+					padding-left: 35px;
+					padding-right: 5px;
+					font-size: 14px;					
+				}
+												 /*Общие стили для элементов пагинатора*/
+					.paginatorNum {
+						border: 1px solid #666;
+						background: #ACF58D;
+						background: #C2FFA8;
+						border-radius: 50%;
+						display: inline-block;
+						height: 28px;
+						width: 28px;
+						text-align: center;
+						color: #666;
+						font-size: 14px;
+						line-height: 28px;
+						font-weight: 900;
+						text-decoration: none;
+						margin-left: 30px;
+						overflow: hidden;
+					}
+																	/*1-й блок - box 1-й страницы*/
+					#paginatorPanelLeftNum {
+						margin-left: 0px;
+					}
+					#paginatorPanelPrevArr {}
+																		/*3-й блок - box Центр-й страницы*/
+					#paginatorPanelCenterNum {
+						border-radius: 3px;
+						background-color: #8DE2F5;
+						color: brown;
+					}
+																													/*Общие стили для стрелок*/
+					#paginatorPanelPrevArr, #paginatorPanelNextArr {
+						color: silver;
+						border-radius: 0px;
+						border: none;
+						background-color: transparent;
+						font-size: 32px;
+						line-height: 32px;
+						position: absolute;
+						left: 36px;
+						height: 32px;
+						width: 28px;
+						top: 0px;
+					}
+					#paginatorPanelNextArr {
+						left: 99px;
+					}
+					#paginatorPanelPrevArr:hover, #paginatorPanelNextArr:hover {
+						color: #BA8DF5;
+					}
+					.paginatorNumHover:hover {
+						background-color: #F5E08D;
+					}
+														/*Стиль случай когда 1-я/N-я ссылка - пустой блок и не активна
+															echoPagFirstPage(), echoPagLastPage()*/
+					.paginatorNumNone {
+						cursor: default;
+						background-color: transparent;
+						border: 1px solid #C1C1C1;
+					}
+					.paginatorArrNone {
+						color: #E9E9E9 !important;
+						cursor: default;
+					}
+																	/*Сдвиг для последней цифры*/
+					#paginatorPanelRightNum {
+						margin-left: 29px;
+					}
+	/*			  Страница Подробнее для Книги (bookDetails.php)
+	----------------------------------------------------------------*/
+			.bookDetBox {
+				line-height: 20px;
+				font-size: 18px;
+			}
+				.commentsBoxDet {
+					height: 150px;
+					background-color: #FFFDE9;
+					border: 1px solid silver;
+					border-radius: 5px;
+					margin-top: 10px;
+					box-shadow: #C49CD8 0px 0px 7px;
+					line-height: 150px;
+					text-align: center;
+					font-size: 17px;
+					color: navy;
+				}
+	/*			  Страница Вывода корзины (inBasket.php)
+	----------------------------------------------------------------*/
+								/*Таблица Вывода Корзины*/
+			#AdmTable {
+				width: 100%;
+				border: 1px solid #B8B085;
+				text-align: center;
+				table-layout: fixed;
+			}
+											/*Полосатая таблица*/
+				#AdmTable tr {
+					background-color: #EFEEFF;
+				}
+				#AdmTable tr:nth-child(2n+1) {
+					background-color: white;
+				}
+				#AdmTable thead tr{
+					color: brown;
+					background-color: #D1CEF3 !important;
+				}
+													/*Для ячеек таблицы*/
+					#AdmTable tr td {
+						border: 1px solid #B8B085;
+					}
+										/*Иконка удаления*/
+						.delUrl {
+							display: inline-block;
+							width: 15px;
+							height: 12px;
+							margin-top: 3px;
+							background: url(../img/del.png) no-repeat;
+							text-decoration: none;
+						}
+										/* Ширина ячеек*/
+						#tabNum {
+							width: 30px;
+						}
+						#tabPrice {
+							width: 50px;
+						}
+						#tabVal {
+							width: 52px;
+						}
+						#tabDel {
+							width: 70px;
+						}
